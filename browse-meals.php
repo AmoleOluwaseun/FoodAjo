@@ -298,7 +298,7 @@
 
         <!-- Browse Section -->
         <section class="section" style="padding: 60px 0;">
-            <div class="container">
+            <div class="container-fluid px-5">
                 <div class="row">
                     <!-- Filter Sidebar -->
                     <div class="col-lg-3">
@@ -380,7 +380,7 @@
 
                         <div class="row" id="mealsContainer">
                             <!-- Meal Card 1 -->
-                            <div class="col-md-6" data-aos="fade-up">
+                            <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up">
                                 <div class="meal-card" onclick="window.location.href='meal-details.php?id=1'">
                                     <div style="position: relative;">
                                         <img src="assets/img/menu/menu-item-1.png" alt="Jollof Rice" class="meal-image">
@@ -425,7 +425,7 @@
                             </div>
 
                             <!-- Meal Card 2 -->
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="100">
                                 <div class="meal-card" onclick="window.location.href='meal-details.php?id=2'">
                                     <div style="position: relative;">
                                         <img src="assets/img/menu/menu-item-2.png" alt="Fried Rice" class="meal-image">
@@ -470,7 +470,7 @@
                             </div>
 
                             <!-- Meal Card 3 -->
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="200">
                                 <div class="meal-card" onclick="window.location.href='meal-details.php?id=3'">
                                     <div style="position: relative;">
                                         <img src="assets/img/menu/menu-item-3.png" alt="Yam & Eggs" class="meal-image">
@@ -515,7 +515,7 @@
                             </div>
 
                             <!-- Meal Card 4 -->
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="300">
                                 <div class="meal-card" onclick="window.location.href='meal-details.php?id=4'">
                                     <div style="position: relative;">
                                         <img src="assets/img/menu/menu-item-4.png" alt="Beans & Plantain"
@@ -554,6 +554,170 @@
                                         </div>
                                         <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">10 of 10
                                             participants joined</p>
+
+                                        <button class="btn btn-join" disabled>Meal Full</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Meal Card 5 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="400">
+                                <div class="meal-card" onclick="window.location.href='meal-details.php?id=5'">
+                                    <div style="position: relative;">
+                                        <img src="assets/img/menu/menu-item-5.png" alt="Pounded Yam" class="meal-image">
+                                        <span class="meal-badge">5 spots left</span>
+                                    </div>
+                                    <div class="meal-content">
+                                        <h3 class="meal-title">Pounded Yam & Egusi</h3>
+                                        <div class="meal-meta">
+                                            <span class="meta-item"><i class="bi bi-geo-alt-fill"></i> Gbagada, Lagos</span>
+                                            <span class="meta-item"><i class="bi bi-clock-fill"></i> Sun, 2:00 PM</span>
+                                        </div>
+
+                                        <div class="meal-organizer">
+                                            <img src="assets/img/chefs/chefs-1.jpg" alt="Organizer" class="organizer-avatar">
+                                            <div class="organizer-info">
+                                                <div class="organizer-name">David Okon</div>
+                                                <div class="organizer-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star"></i>
+                                                    <span style="color: #666;">(4.2)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="meal-price">₦2,000 <span class="price-label">per person</span></div>
+
+                                        <div class="participants-bar">
+                                            <div class="participants-fill" style="width: 50%;"></div>
+                                        </div>
+                                        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">5 of 10 participants joined</p>
+
+                                        <button class="btn btn-join">Join Meal</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Meal Card 6 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="500">
+                                <div class="meal-card" onclick="window.location.href='meal-details.php?id=6'">
+                                    <div style="position: relative;">
+                                        <img src="assets/img/menu/menu-item-6.png" alt="Spaghetti" class="meal-image">
+                                        <span class="meal-badge">2 spots left</span>
+                                    </div>
+                                    <div class="meal-content">
+                                        <h3 class="meal-title">Spaghetti & Meatballs</h3>
+                                        <div class="meal-meta">
+                                            <span class="meta-item"><i class="bi bi-geo-alt-fill"></i> Yaba, Lagos</span>
+                                            <span class="meta-item"><i class="bi bi-clock-fill"></i> Mon, 7:00 PM</span>
+                                        </div>
+
+                                        <div class="meal-organizer">
+                                            <img src="assets/img/chefs/chefs-2.jpg" alt="Organizer" class="organizer-avatar">
+                                            <div class="organizer-info">
+                                                <div class="organizer-name">Sarah James</div>
+                                                <div class="organizer-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                    <span style="color: #666;">(4.7)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="meal-price">₦1,500 <span class="price-label">per person</span></div>
+
+                                        <div class="participants-bar">
+                                            <div class="participants-fill" style="width: 80%;"></div>
+                                        </div>
+                                        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">8 of 10 participants joined</p>
+
+                                        <button class="btn btn-join">Join Meal</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Meal Card 7 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="600">
+                                <div class="meal-card" onclick="window.location.href='meal-details.php?id=7'">
+                                    <div style="position: relative;">
+                                        <img src="assets/img/menu/menu-item-3.png" alt="Pepper Soup" class="meal-image">
+                                        <span class="meal-badge">9 spots left</span>
+                                    </div>
+                                    <div class="meal-content">
+                                        <h3 class="meal-title">Catfish Pepper Soup</h3>
+                                        <div class="meal-meta">
+                                            <span class="meta-item"><i class="bi bi-geo-alt-fill"></i> Lekki, Lagos</span>
+                                            <span class="meta-item"><i class="bi bi-clock-fill"></i> Fri, 6:00 PM</span>
+                                        </div>
+
+                                        <div class="meal-organizer">
+                                            <img src="assets/img/chefs/chefs-3.jpg" alt="Organizer" class="organizer-avatar">
+                                            <div class="organizer-info">
+                                                <div class="organizer-name">Michael Chen</div>
+                                                <div class="organizer-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <span style="color: #666;">(4.9)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="meal-price">₦3,000 <span class="price-label">per person</span></div>
+
+                                        <div class="participants-bar">
+                                            <div class="participants-fill" style="width: 10%;"></div>
+                                        </div>
+                                        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">1 of 10 participants joined</p>
+
+                                        <button class="btn btn-join">Join Meal</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Meal Card 8 -->
+                            <div class="col-md-6 col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="700">
+                                <div class="meal-card" onclick="window.location.href='meal-details.php?id=8'">
+                                    <div style="position: relative;">
+                                        <img src="assets/img/menu/menu-item-1.png" alt="Amala" class="meal-image">
+                                        <span class="meal-badge" style="background: #28a745;">Full</span>
+                                    </div>
+                                    <div class="meal-content">
+                                        <h3 class="meal-title">Amala & Ewedu</h3>
+                                        <div class="meal-meta">
+                                            <span class="meta-item"><i class="bi bi-geo-alt-fill"></i> Surulere, Lagos</span>
+                                            <span class="meta-item"><i class="bi bi-clock-fill"></i> Sat, 1:00 PM</span>
+                                        </div>
+
+                                        <div class="meal-organizer">
+                                            <img src="assets/img/testimonials/testimonials-3.jpg" alt="Organizer" class="organizer-avatar">
+                                            <div class="organizer-info">
+                                                <div class="organizer-name">Blessing A.</div>
+                                                <div class="organizer-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star"></i>
+                                                    <span style="color: #666;">(4.3)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="meal-price">₦1,800 <span class="price-label">per person</span></div>
+
+                                        <div class="participants-bar">
+                                            <div class="participants-fill" style="width: 100%;"></div>
+                                        </div>
+                                        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">10 of 10 participants joined</p>
 
                                         <button class="btn btn-join" disabled>Meal Full</button>
                                     </div>
