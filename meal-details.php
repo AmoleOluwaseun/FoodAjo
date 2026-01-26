@@ -312,7 +312,8 @@
                     <span class="meal-badge">6 spots available</span>
                     <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 15px;">Jollof Rice & Chicken</h1>
                     <p style="font-size: 1.2rem; margin-bottom: 20px;"><i class="bi bi-geo-alt-fill"></i> Yaba, Lagos •
-                        <i class="bi bi-clock-fill"></i> Today, 6:00 PM</p>
+                        <i class="bi bi-clock-fill"></i> Today, 6:00 PM
+                    </p>
                 </div>
             </div>
         </section>
@@ -458,7 +459,7 @@
 
                         <!-- Reviews -->
                         <div class="detail-card" data-aos="fade-up" data-aos-delay="300">
-                            <h2 class="detail-title">Reviews for Chioma</h2>
+                            <h2 class="detail-title">Notes for Chioma</h2>
                             <div class="review-item">
                                 <div class="review-header">
                                     <div class="review-author">
@@ -466,20 +467,13 @@
                                             class="review-avatar">
                                         <div>
                                             <h6 style="margin: 0; font-weight: 600;">Tunde Bakare</h6>
-                                            <p style="margin: 0; font-size: 0.85rem; color: #666;">2 weeks ago</p>
+                                            <p style="margin: 0; font-size: 0.85rem; color: #666;">1 hour ago</p>
                                         </div>
                                     </div>
-                                    <div class="review-rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                    </div>
+
                                 </div>
-                                <p style="color: #666; margin: 0;">Amazing meal! The jollof was perfectly cooked and the
-                                    portions were generous. Chioma is very organized and communicative. Highly
-                                    recommend!</p>
+                                <p style="color: #666; margin: 0;">Please make sure the food is well packaged and
+                                    delivered on time.</p>
                             </div>
                             <div class="review-item">
                                 <div class="review-header">
@@ -488,19 +482,11 @@
                                             class="review-avatar">
                                         <div>
                                             <h6 style="margin: 0; font-weight: 600;">Amaka Johnson</h6>
-                                            <p style="margin: 0; font-size: 0.85rem; color: #666;">1 month ago</p>
+                                            <p style="margin: 0; font-size: 0.85rem; color: #666;">12 minutes ago</p>
                                         </div>
                                     </div>
-                                    <div class="review-rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star"></i>
-                                    </div>
                                 </div>
-                                <p style="color: #666; margin: 0;">Great experience! The food was delicious and ready on
-                                    time. Will definitely join again.</p>
+                                <p style="color: #666; margin: 0;">Please make sure the food is not very spicy.</p>
                             </div>
                         </div>
                     </div>
