@@ -277,6 +277,96 @@
         .review-rating {
             color: #ffc107;
         }
+
+        /* Share Modal Styles */
+        .share-modal-body {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .share-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+
+        .share-option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s;
+        }
+
+        .share-option:hover {
+            transform: translateY(-5px);
+            color: #ce1212;
+        }
+
+        .share-icon-wrapper {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .share-option:hover .share-icon-wrapper {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .bg-whatsapp {
+            background-color: #25D366;
+        }
+
+        .bg-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .bg-facebook {
+            background-color: #1877F2;
+        }
+
+        .bg-copy {
+            background-color: #6c757d;
+        }
+
+        .copy-link-input {
+            display: flex;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 5px;
+            margin-top: 15px;
+        }
+
+        .copy-link-input input {
+            border: none;
+            background: transparent;
+            flex: 1;
+            padding: 8px;
+            outline: none;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .copy-link-input button {
+            border: none;
+            background: #333;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
     </style>
 </head>
 
@@ -499,7 +589,8 @@
                                 <p style="margin-bottom: 25px; opacity: 0.95;">per person</p>
                                 <button class="btn btn-join-large" onclick="joinMeal()">Join This Meal</button>
                                 <div class="share-buttons">
-                                    <button class="btn-share"><i class="bi bi-share-fill"></i> Share</button>
+                                    <button class="btn-share" onclick="openShareModal()"><i
+                                            class="bi bi-share-fill"></i> Share</button>
                                     <button class="btn-share"><i class="bi bi-heart-fill"></i> Save</button>
                                 </div>
                             </div>
@@ -539,6 +630,54 @@
         </div>
     </footer>
 
+    <!-- Share Modal -->
+    <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border-radius: 15px; border: none;">
+                <div class="modal-header" style="border-bottom: none; padding: 20px 25px 0;">
+                    <h5 class="modal-title" id="shareModalLabel" style="font-weight: 700;">Share this meal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body share-modal-body">
+                    <p style="color: #666; margin-bottom: 5px;">Invite friends to join "Jollof Rice & Chicken"</p>
+
+                    <div class="share-options">
+                        <a href="#" class="share-option" onclick="shareTo('whatsapp')">
+                            <div class="share-icon-wrapper bg-whatsapp">
+                                <i class="bi bi-whatsapp"></i>
+                            </div>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="#" class="share-option" onclick="shareTo('instagram')">
+                            <div class="share-icon-wrapper bg-instagram">
+                                <i class="bi bi-instagram"></i>
+                            </div>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="share-option" onclick="shareTo('facebook')">
+                            <div class="share-icon-wrapper bg-facebook">
+                                <i class="bi bi-facebook"></i>
+                            </div>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="share-option" onclick="copyLink()">
+                            <div class="share-icon-wrapper bg-copy">
+                                <i class="bi bi-link-45deg"></i>
+                            </div>
+                            <span>Copy Link</span>
+                        </a>
+                    </div>
+
+                    <div class="copy-link-input">
+                        <input type="text" value="https://foodajo.com/meal-details.php?id=1" readonly
+                            id="shareLinkInput">
+                        <button onclick="copyLink()">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
@@ -559,6 +698,51 @@
                 // Redirect to payment page
                 window.location.href = 'payment.php?meal_id=1';
             }
+        }
+
+        // Initialize modal
+        const shareModal = new bootstrap.Modal(document.getElementById('shareModal'));
+
+        function openShareModal() {
+            shareModal.show();
+        }
+
+        function shareTo(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent("Check out this delicious meal on FoodAjo: Jollof Rice & Chicken!");
+
+            let shareUrl = '';
+
+            switch (platform) {
+                case 'whatsapp':
+                    shareUrl = `https://wa.me/?text=${text}%20${url}`;
+                    break;
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                    break;
+                case 'instagram':
+                    // Instagram doesn't support direct web sharing, usually just copying link or opening app
+                    alert('Link copied! Open Instagram to share.');
+                    copyLink();
+                    return;
+            }
+
+            if (shareUrl) window.open(shareUrl, '_blank');
+        }
+
+        function copyLink() {
+            const copyText = document.getElementById("shareLinkInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            navigator.clipboard.writeText(copyText.value);
+
+            // Change button text temporarily
+            const btn = document.querySelector('.copy-link-input button');
+            const originalText = btn.innerText;
+            btn.innerText = 'Copied!';
+            setTimeout(() => {
+                btn.innerText = originalText;
+            }, 2000);
         }
     </script>
 
