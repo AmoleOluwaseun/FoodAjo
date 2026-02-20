@@ -479,12 +479,7 @@
         </section>
     </main>
 
-    <footer id="footer" class="footer dark-background">
-        <div class="container copyright text-center mt-4">
-            <p>&copy; <span>Copyright</span> <strong class="px-1 sitename">FoodAjo</strong> <span>All Rights
-                    Reserved</span></p>
-        </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

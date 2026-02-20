@@ -771,42 +771,7 @@
         </section>
     </main>
 
-    <footer id="footer" class="footer dark-background">
-        <div class="container">
-            <div class="row gy-3">
-                <div class="col-lg-3 col-md-6">
-                    <h4>FoodAjo</h4>
-                    <p>Eat better together, spend less.</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4>Quick Links</h4>
-                    <ul style="list-style: none; padding: 0;">
-                        <li><a href="about.php" style="color: white; text-decoration: none;">About Us</a></li>
-                        <li><a href="browse-meals.php" style="color: white; text-decoration: none;">Browse Meals</a>
-                        </li>
-                        <li><a href="how-it-works.php" style="color: white; text-decoration: none;">How It Works</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4>Contact</h4>
-                    <p>Email: support@foodajo.com<br>Phone: +234 800 123 4567</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4>Follow Us</h4>
-                    <div class="social-links d-flex">
-                        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">FoodAjo</strong> <span>All Rights Reserved</span>
-            </p>
-        </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
