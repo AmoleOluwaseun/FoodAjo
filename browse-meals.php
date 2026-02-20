@@ -269,14 +269,28 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="browse-meals.php" class="active">Browse Meals</a></li>
-                    <li><a href="dashboard.php">Dashboard</a></li>
-                    <li><a href="my-meals.php">My Meals</a></li>
-                    <li><a href="messages.php">Messages</a></li>
+                    <li><a href="how-it-works.php">How It Works</a></li>
+                    <li class="dropdown"><a href="#"><span>Meals</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="create-meal.php">Create a Meal</a></li>
+                            <li><a href="my-meals.php">My Meals</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><span>Account</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="dashboard.php">Dashboard</a></li>
+                            <li><a href="profile.php">My Profile</a></li>
+                            <li><a href="edit-profile.php">Edit Profile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.php#contact">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="btn-getstarted" href="create-meal.php">Create Meal</a>
+            <a class="btn-getstarted" href="login.php">Login</a>
         </div>
     </header>
 
@@ -570,12 +584,14 @@
                                     <div class="meal-content">
                                         <h3 class="meal-title">Pounded Yam & Egusi</h3>
                                         <div class="meal-meta">
-                                            <span class="meta-item"><i class="bi bi-geo-alt-fill"></i> Gbagada, Lagos</span>
+                                            <span class="meta-item"><i class="bi bi-geo-alt-fill"></i> Gbagada,
+                                                Lagos</span>
                                             <span class="meta-item"><i class="bi bi-clock-fill"></i> Sun, 2:00 PM</span>
                                         </div>
 
                                         <div class="meal-organizer">
-                                            <img src="assets/img/chefs/chefs-1.jpg" alt="Organizer" class="organizer-avatar">
+                                            <img src="assets/img/chefs/chefs-1.jpg" alt="Organizer"
+                                                class="organizer-avatar">
                                             <div class="organizer-info">
                                                 <div class="organizer-name">David Okon</div>
                                                 <div class="organizer-rating">
@@ -594,7 +610,8 @@
                                         <div class="participants-bar">
                                             <div class="participants-fill" style="width: 50%;"></div>
                                         </div>
-                                        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">5 of 10 participants joined</p>
+                                        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">5 of 10
+                                            participants joined</p>
 
                                         <button class="btn btn-join">Join Meal</button>
                                     </div>
@@ -611,12 +628,14 @@
                                     <div class="meal-content">
                                         <h3 class="meal-title">Spaghetti & Meatballs</h3>
                                         <div class="meal-meta">
-                                            <span class="meta-item"><i class="bi bi-geo-alt-fill"></i> Yaba, Lagos</span>
+                                            <span class="meta-item"><i class="bi bi-geo-alt-fill"></i> Yaba,
+                                                Lagos</span>
                                             <span class="meta-item"><i class="bi bi-clock-fill"></i> Mon, 7:00 PM</span>
                                         </div>
 
                                         <div class="meal-organizer">
-                                            <img src="assets/img/chefs/chefs-2.jpg" alt="Organizer" class="organizer-avatar">
+                                            <img src="assets/img/chefs/chefs-2.jpg" alt="Organizer"
+                                                class="organizer-avatar">
                                             <div class="organizer-info">
                                                 <div class="organizer-name">Sarah James</div>
                                                 <div class="organizer-rating">
@@ -635,7 +654,8 @@
                                         <div class="participants-bar">
                                             <div class="participants-fill" style="width: 80%;"></div>
                                         </div>
-                                        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">8 of 10 participants joined</p>
+                                        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">8 of 10
+                                            participants joined</p>
 
                                         <button class="btn btn-join">Join Meal</button>
                                     </div>
@@ -652,12 +672,14 @@
                                     <div class="meal-content">
                                         <h3 class="meal-title">Catfish Pepper Soup</h3>
                                         <div class="meal-meta">
-                                            <span class="meta-item"><i class="bi bi-geo-alt-fill"></i> Lekki, Lagos</span>
+                                            <span class="meta-item"><i class="bi bi-geo-alt-fill"></i> Lekki,
+                                                Lagos</span>
                                             <span class="meta-item"><i class="bi bi-clock-fill"></i> Fri, 6:00 PM</span>
                                         </div>
 
                                         <div class="meal-organizer">
-                                            <img src="assets/img/chefs/chefs-3.jpg" alt="Organizer" class="organizer-avatar">
+                                            <img src="assets/img/chefs/chefs-3.jpg" alt="Organizer"
+                                                class="organizer-avatar">
                                             <div class="organizer-info">
                                                 <div class="organizer-name">Michael Chen</div>
                                                 <div class="organizer-rating">
@@ -676,7 +698,8 @@
                                         <div class="participants-bar">
                                             <div class="participants-fill" style="width: 10%;"></div>
                                         </div>
-                                        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">1 of 10 participants joined</p>
+                                        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">1 of 10
+                                            participants joined</p>
 
                                         <button class="btn btn-join">Join Meal</button>
                                     </div>
@@ -693,12 +716,14 @@
                                     <div class="meal-content">
                                         <h3 class="meal-title">Amala & Ewedu</h3>
                                         <div class="meal-meta">
-                                            <span class="meta-item"><i class="bi bi-geo-alt-fill"></i> Surulere, Lagos</span>
+                                            <span class="meta-item"><i class="bi bi-geo-alt-fill"></i> Surulere,
+                                                Lagos</span>
                                             <span class="meta-item"><i class="bi bi-clock-fill"></i> Sat, 1:00 PM</span>
                                         </div>
 
                                         <div class="meal-organizer">
-                                            <img src="assets/img/testimonials/testimonials-3.jpg" alt="Organizer" class="organizer-avatar">
+                                            <img src="assets/img/testimonials/testimonials-3.jpg" alt="Organizer"
+                                                class="organizer-avatar">
                                             <div class="organizer-info">
                                                 <div class="organizer-name">Blessing A.</div>
                                                 <div class="organizer-rating">
@@ -717,7 +742,8 @@
                                         <div class="participants-bar">
                                             <div class="participants-fill" style="width: 100%;"></div>
                                         </div>
-                                        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">10 of 10 participants joined</p>
+                                        <p style="font-size: 0.85rem; color: #666; margin-bottom: 15px;">10 of 10
+                                            participants joined</p>
 
                                         <button class="btn btn-join" disabled>Meal Full</button>
                                     </div>
@@ -745,42 +771,7 @@
         </section>
     </main>
 
-    <footer id="footer" class="footer dark-background">
-        <div class="container">
-            <div class="row gy-3">
-                <div class="col-lg-3 col-md-6">
-                    <h4>FoodAjo</h4>
-                    <p>Eat better together, spend less.</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4>Quick Links</h4>
-                    <ul style="list-style: none; padding: 0;">
-                        <li><a href="about.php" style="color: white; text-decoration: none;">About Us</a></li>
-                        <li><a href="browse-meals.php" style="color: white; text-decoration: none;">Browse Meals</a>
-                        </li>
-                        <li><a href="how-it-works.php" style="color: white; text-decoration: none;">How It Works</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4>Contact</h4>
-                    <p>Email: support@foodajo.com<br>Phone: +234 800 123 4567</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4>Follow Us</h4>
-                    <div class="social-links d-flex">
-                        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">FoodAjo</strong> <span>All Rights Reserved</span>
-            </p>
-        </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i

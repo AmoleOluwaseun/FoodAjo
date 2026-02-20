@@ -383,14 +383,28 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="browse-meals.php">Browse Meals</a></li>
-                    <li><a href="dashboard.php">Dashboard</a></li>
-                    <li><a href="my-meals.php">My Meals</a></li>
-                    <li><a href="messages.php">Messages</a></li>
+                    <li><a href="how-it-works.php">How It Works</a></li>
+                    <li class="dropdown"><a href="#"><span>Meals</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="create-meal.php">Create a Meal</a></li>
+                            <li><a href="my-meals.php">My Meals</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><span>Account</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="dashboard.php">Dashboard</a></li>
+                            <li><a href="profile.php">My Profile</a></li>
+                            <li><a href="edit-profile.php">Edit Profile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.php#contact">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="btn-getstarted" href="create-meal.php">Create Meal</a>
+            <a class="btn-getstarted" href="login.php">Login</a>
         </div>
     </header>
 
@@ -623,12 +637,7 @@
         </section>
     </main>
 
-    <footer id="footer" class="footer dark-background">
-        <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">FoodAjo</strong> <span>All Rights Reserved</span>
-            </p>
-        </div>
-    </footer>
+    <?php include 'includes/footer.php'; ?>
 
     <!-- Share Modal -->
     <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel" aria-hidden="true">
