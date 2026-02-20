@@ -186,7 +186,7 @@
                 <h1 class="auth-logo">FoodAjo</h1>
                 <p class="auth-subtitle">Welcome back! Login to continue</p>
 
-                <form action="auth/login-handler.php" method="POST" id="loginForm">
+                <form action="index.php" method="POST" id="loginForm">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email Address</label>
                         <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"

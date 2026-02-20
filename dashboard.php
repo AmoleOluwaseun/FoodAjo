@@ -246,27 +246,28 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="browse-meals.php">Browse Meals</a></li>
-                    <li><a href="dashboard.php" class="active">Dashboard</a></li>
-                    <li><a href="my-meals.php">My Meals</a></li>
-                    <li><a href="messages.php">Messages <span class="badge bg-danger">3</span></a></li>
+                    <li><a href="how-it-works.php">How It Works</a></li>
+                    <li class="dropdown"><a href="#"><span>Meals</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="create-meal.php">Create a Meal</a></li>
+                            <li><a href="my-meals.php">My Meals</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="active"><span>Account</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="dashboard.php">Dashboard</a></li>
+                            <li><a href="profile.php">My Profile</a></li>
+                            <li><a href="edit-profile.php">Edit Profile</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.php#contact">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <div class="dropdown">
-                <a class="btn-getstarted dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                    <i class="bi bi-person-circle"></i> Chioma
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="profile.php">My Profile</a></li>
-                    <li><a class="dropdown-item" href="edit-profile.php">Settings</a></li>
-                    <li><a class="dropdown-item" href="payments.php">Payment History</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-                </ul>
-            </div>
+            <a class="btn-getstarted" href="login.php">Login</a>
         </div>
     </header>
 

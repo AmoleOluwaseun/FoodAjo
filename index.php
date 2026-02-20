@@ -270,19 +270,28 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#why-foodajo">Why FoodAjo</a></li>
-          <li><a href="#roles">Get Involved</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#events">Meal Ideas</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.php" class="active">Home</a></li>
+          <li><a href="browse-meals.php">Browse Meals</a></li>
+          <li><a href="how-it-works.php">How It Works</a></li>
+          <li class="dropdown"><a href="#"><span>Meals</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="create-meal.php">Create a Meal</a></li>
+              <li><a href="my-meals.php">My Meals</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Account</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="dashboard.php">Dashboard</a></li>
+              <li><a href="profile.php">My Profile</a></li>
+              <li><a href="edit-profile.php">Edit Profile</a></li>
+            </ul>
+          </li>
+          <li><a href="index.php#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="register.php">Get Started</a>
+      <a class="btn-getstarted" href="login.php">Login</a>
 
     </div>
   </header>
